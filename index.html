@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fruit-brust</title>
+    <!-- tailwind and daisy ul -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+   .font-Lato{
+     font-family: 'Lato', sans-serif;
+   }
+   #slide1{
+    background-image: url(images/banner1.png);
+   }
+   #slide2{
+    background-image: url(images/banner2.png);
+   }
+   #slide3{
+    background-image: url(images/banner3.png);
+   }
+   #slide4{
+    background-image: url(images/banner4.png);
+   }
+
+</style>
+</head>
+<body class="font-Lato">
+
+    <header class="md:container md:mx-auto">
+
+        <div class="navbar bg-red-400 rounded-full">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>shop</a></li>
+                  <li><a>All Fruits</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="navbar-center">
+                <img src="./images/logo.png" alt="">
+              <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
+            </div>
+            <div class="navbar-end">
+                <div class="form-control">
+                    <input type="text" placeholder="Search here" class="input rounded-full input-bordered w-24 md:w-auto" />
+                  </div>
+              <button class="btn btn-ghost btn-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+              </button>
+              
+            </div>
+          </div>
+          <!-- slider or carousel section -->
+          <div class="carousel h-[600px] w-full mt-24 rounded-lg">
+            <!-- slide 1 -->
+            <div id="slide1" class="carousel-item relative w-full">
+              
+              <img src="/images/banner1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <!-- slide 2 -->
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="/images/banner2.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+             <!--slide 3  -->
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="/images/banner3.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <!-- slide 4 -->
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="/images/banner4.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+         
+    </header>
+    <main>
+        <!-- Deal day section -->
+       
+        <div  class="flex">
+          <div>
+           <h1 class="font-extrabold text-black text-5xl mt-24 mb-6">Deal of the day</h1>
+           <p class="font-medium text-base text-gray-600">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>
+          <div >
+           <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+             <div class="flex flex-col">
+               <span class="countdown font-mono text-5xl">
+                 <span style="--value:15;"></span>
+               </span>
+               days
+             </div> 
+             <div class="flex flex-col">
+               <span class="countdown font-mono text-5xl">
+                 <span style="--value:10;"></span>
+               </span>
+               hours
+             </div> 
+             <div class="flex flex-col">
+               <span class="countdown font-mono text-5xl">
+                 <span style="--value:24;"></span>
+               </span>
+               min
+             </div> 
+             <div class="flex flex-col">
+               <span class="countdown font-mono text-5xl">
+                 <span style="--value:41;"></span>
+               </span>
+               sec
+             </div>
+           </div>
+          </div>
+       </div>
+
+      
+
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
